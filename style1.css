@@ -50,8 +50,9 @@ Header.menu-fixe {
 
 /* Logo */
 Header.menu-fixe .logo img {
-    Width : 120px ; /* Taille du logo */
+    Max-width : 100px ; /* Taille du logo */
     Height : auto ;
+        display : block
 }
 
 /* Navigation */
@@ -209,7 +210,7 @@ hope{
 
 .image-item img {
     Width : 100% ; /* Les images remplissent leurs conteneurs */
-    Max-width : 300px ; /* Limite la taille maximale des images */
+    Max-width : 1200px ; /* Limite la taille maximale des images */
     Border-radius : 10px ; /* Arrondit légèrement les coins des images */
     Box-shadow : 0 4px 6px rgba(0, 0, 0, 0.1) ; /* Ombre douce */
 }
