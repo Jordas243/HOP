@@ -1,12 +1,66 @@
-/* Global */
-
-
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.8; /* Interlignes plus grandes */
+    line-height: 1.8;
     margin: 0;
-    padding-top: 1vh;
+    padding-top: 70px; /* Espacement égal à la hauteur de la barre */
     background-color: #f4f4f9;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustement pour les petits écrans */
+@media screen and (max-width: 768px) {
+    header .logo img {
+        width: 80px; /* Réduction du logo */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em; /* Réduction des titres */
+    }
+
+    .menu-section {
+        flex-direction: column; /* Empile les blocs verticalement */
+        gap: 20px;
+    }
+
+    .menu-block {
+        padding: 20px; /* Réduction des marges */
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr; /* Une seule colonne d'images */
+        gap: 15px;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 480px) {
+    h2, h3 {
+        font-size: 1.2em; /* Taille des titres plus petite */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .menu-block {
+        font-size: 1em; /* Réduction du texte dans les blocs */
+    }
+
+    .carousel-container {
+        height: 200px; /* Réduction de la hauteur du carrousel */
+    }
+
+    .carousel-slide img {
+        height: 200px;
+    }
 }
 
 
